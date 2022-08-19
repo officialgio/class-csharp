@@ -6,11 +6,24 @@ public class IncremntAndDecrementOperators
 {
 	static void Main()
 	{
-        int i = 1;
-        //int j = i++; uncomment for i++
-        int j = ++i; // uncomment if you're going to use line 10
+		int sum = 0;
 
-        Console.WriteLine("i++: j = {0}, i = {1}", j, i);
-        Console.WriteLine("++i: j = {0}, i = {1}", j, i);
+		for (int i = 0; i <= 4; i++)
+		{
+			sum += i; // 0 + 1 + 2 + 3 + 4 = 10
+			Console.WriteLine("Loop {0}", i);
+        }
+		Console.WriteLine(sum);
+
+
+
+
+		//int sum = 0; 
+		//for (int i = 0; i <= 4; i++)
+		//{
+		//	sum += (int)Math.Pow(i, 2);
+		//	Console.WriteLine(i);
+		//}
+		//Console.WriteLine(sum);
     }
 }
