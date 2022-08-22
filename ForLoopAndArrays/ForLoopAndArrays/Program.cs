@@ -48,7 +48,7 @@ public class Program
             Console.WriteLine($"element {array2[i]}"); // print elements 
         }
 
-        Console.WriteLine("------ChangeValues------");
+        Console.WriteLine("------FindMax------");
         var max = FindMax(array2);
         Console.WriteLine($"The max in the array2 is {max}");
     }
