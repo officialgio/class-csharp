@@ -16,6 +16,7 @@ public class Program
         // Alternative syntax.
         int[] array3 = { 1, 2, 3, 4, 5, 6 };
 
+        Console.WriteLine("------Length of Array2------");
         // lenght of array2
         int lengthOfArray = array2.Length; // 5
         Console.WriteLine(lengthOfArray);
@@ -31,5 +32,37 @@ public class Program
         double[] doubleArray;
         byte[] byteArray;
         float[] floatArray;
+
+
+        // with if statement
+        if (array1[0] > array1[1])
+        {
+            // do something.. .
+        }
+
+        Console.WriteLine("------Looping through Array2------");
+        // Looping through Array2
+        for (int i = 0; i < array2.Length; i++)
+        {
+            Console.WriteLine($"\nindex {i}"); // print index
+            Console.WriteLine($"element {array2[i]}"); // print elements 
+        }
+
+        Console.WriteLine("------ChangeValues------");
+        var max = FindMax(array2);
+        Console.WriteLine($"The max in the array2 is {max}");
+    }
+
+    // Find max by looping through
+    public static int FindMax(int[] arr)
+    {
+        int largest = arr[0];
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] > largest)
+                largest = arr[i];
+        }
+
+        return largest;
     }
 }
