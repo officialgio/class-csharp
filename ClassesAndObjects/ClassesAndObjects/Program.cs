@@ -18,10 +18,10 @@ public class Program
         Person personNine = new Person("Name8", "LastName8");
 
         // store them manually in an array 
-        // usually these are store with an array
-        // but because we've only cover arrays this is sort of the same process
-
-        // usually they're store in databases along with many more properties than just a name and lastName 
+        // usually these are not store with an array
+        // but because we've only cover arrays this is sort of the same process when storing objects
+        // usually they're store in databases along with many more properties than just a name and lastName
+        // usually you don't store them manually, you'll have the logic on methods that'll do it for you. 
         Person[] arrayOfPeople = new Person[9]
         {
             personOne,
